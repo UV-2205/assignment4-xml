@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://UV-2205.github.io/assignment4-xml"
+           xmlns="https://UV-2205.github.io/assignment4-xml"
+           elementFormDefault="qualified">
 
   <xs:element name="NationalParks">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="NationalPark" minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="NationalPark" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Name" type="xs:string"/>
